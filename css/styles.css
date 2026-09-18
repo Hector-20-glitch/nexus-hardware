@@ -1,4 +1,28 @@
+:root {
+  --bg-principal: #0d0d12;   /* Negro profundo medianoche */
+  --bg-tarjetas: #171721;    /* Gris carbón oscuro premium */
+  --color-neon: #a855f7;     /* Violeta eléctrico de alta gama */
+  --color-secundario: #00f2fe;/* Cian de contraste para enlaces y botones */
+  --color-texto: #f8fafc;    /* Blanco nítido */
+  --color-mutado: #94a3b8;   /* Gris plata altamente legible */
+  --fuente-main: 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Evita que el header fijo tape el título de la sección */
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--color-texto);
+  font-family: var(--fuente-main);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
