@@ -17,26 +17,30 @@
     <div class="logo">Nexus <span>Hardware</span></div>
     <nav class="navigation">
       <a href="#inicio">Inicio</a>
-      <a href="#productos">Componentes</a> <!-- 🔗 Conecta con la sección de abajo -->
-      <a href="#servicios">Servicios</a>
+      <a href="#productos">Componentes</a>
+      <a href="#servicios-carrusel">Galería</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- PARTICIPANTE 2: Sección Principal <main> -->
+  <!-- PARTICIPANTE 2: Sección Principal <main> con Video Online de Fondo -->
   <main id="inicio" class="hero-section">
+    <!-- Video de fondo en vivo desde Pexels -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://vimeo.com" type="video/mp4">
+    </video>
+    
     <div class="hero-content">
       <h1>Forja tu Potencia Digital</h1>
       <p>Equípate con los componentes de PC de alta gama más avanzados del mercado. Rendimiento extremo para entusiastas del hardware, creadores y gamers.</p>
       <div class="hero-buttons">
-        <a href="#productos" class="btn-primary">Ver Catálogo</a> <!-- 🛠️ Cambiado a #productos -->
+        <a href="#productos" class="btn-primary">Ver Catálogo</a>
         <a href="#contacto" class="btn-secondary">Cotizar PC</a>
       </div>
     </div>
   </main>
 
-  <!-- PARTICIPANTE 3: Sección de Servicios/Productos -->
-  <!-- 💡 LE AGREGAMOS EL ID="PRODUCTOS" AQUÍ PARA QUE EL MENÚ ENLACE CORRECTAMENTE -->
+  <!-- PARTICIPANTE 3: Sección de Productos Destacados con Imágenes Online -->
   <section id="productos" class="services-section">
     <div class="services-header">
       <h2>Componentes Destacados</h2>
@@ -45,25 +49,39 @@
 
     <div class="services-container">
       <article class="card">
-        <div class="card-icon">⚡</div>
+        <img src="https://unsplash.com" alt="Procesador" class="card-img">
         <h3>Procesadores</h3>
         <p>Potencia pura para tus juegos y aplicaciones más exigentes con arquitectura de última generación.</p>
         <a href="#contacto" class="card-link">Ver modelos</a>
       </article>
 
       <article class="card">
-        <div class="card-icon">🎮</div>
+        <img src="https://unsplash.com" alt="Tarjeta Gráfica" class="card-img">
         <h3>Tarjetas Gráficas</h3>
         <p>Disfruta de trazado de rayos en tiempo real y tasas de refresco extremas en resolución 4K.</p>
         <a href="#contacto" class="card-link">Ver modelos</a>
       </article>
 
       <article class="card">
-        <div class="card-icon">💾</div>
+        <img src="https://unsplash.com" alt="Memoria RAM" class="card-img">
         <h3>Memorias RAM</h3>
         <p>Módulos de alta velocidad DDR5 con iluminación RGB optimizados para overclocking estable.</p>
         <a href="#contacto" class="card-link">Ver modelos</a>
       </article>
+    </div>
+  </section>
+
+  <!-- EXTRA INTEGRACIÓN: Imágenes Deslizantes Automáticas (Slider 100% CSS) -->
+  <section id="servicios-carrusel" class="slider-section">
+    <div class="services-header">
+      <h2>Nuestras Builds de Ensueno</h2>
+    </div>
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slide"><img src="https://unsplash.com" alt="Setup Gamer 1"></div>
+        <div class="slide"><img src="https://unsplash.com" alt="Setup Gamer 2"></div>
+        <div class="slide"><img src="https://unsplash.com" alt="Setup Gamer 3"></div>
+      </div>
     </div>
   </section>
 
@@ -97,7 +115,7 @@
       </div>
       <div class="footer-links">
         <a href="#inicio">Inicio</a>
-        <a href="#productos">Componentes</a> <!-- 🛠️ Cambiado a #productos -->
+        <a href="#productos">Componentes</a>
         <a href="#contacto">Contacto</a>
       </div>
     </div>
