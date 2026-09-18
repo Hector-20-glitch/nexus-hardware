@@ -1,0 +1,33 @@
+.site-header {
+  background-color: var(--bg-tarjetas);
+  border-bottom: 2px solid var(--color-neon);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.site-header .logo span {
+  color: var(--color-neon);
+}
+
+.site-header .navigation a {
+  color: var(--color-texto);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-header .navigation a:hover {
+  color: var(--color-neon);
+}
