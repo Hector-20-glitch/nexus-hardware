@@ -1,92 +1,110 @@
-<!-- PARTICIPANTE 1: Header y Menú -->
-<header class="site-header">
-  <div class="logo">Nexus <span>Hardware</span></div>
-  <nav class="navigation">
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Componentes</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Hardware | Componentes de PC</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/servicios.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
 
-<!-- PARTICIPANTE 2: Sección Principal <main> -->
-<main id="inicio" class="hero-section">
-  <div class="hero-content">
-    <h1>Forja tu Potencia Digital</h1>
-    <p>Equípate con los componentes de PC de alta gama más avanzados del mercado. Rendimiento extremo para entusiastas del hardware, creadores y gamers.</p>
-    <div class="hero-buttons">
-      <a href="#servicios" class="btn-primary">Ver Catálogo</a>
-      <a href="#contacto" class="btn-secondary">Cotizar PC</a>
-    </div>
-  </div>
-</main>
-
-<!-- PARTICIPANTE 3: Sección de Servicios/Productos -->
-<section id="servicios" class="services-section">
-  <div class="services-header">
-    <h2>Componentes Destacados</h2>
-    <p>Explora el hardware de máxima ingeniería que tenemos preparado para tu próxima build.</p>
-  </div>
-
-  <div class="services-container">
-    <article class="card">
-      <div class="card-icon">⚡</div>
-      <h3>Procesadores</h3>
-      <p>Potencia pura para tus juegos y aplicaciones más exigentes con arquitectura de última generación.</p>
-      <a href="#contacto" class="card-link">Ver modelos</a>
-    </article>
-
-    <article class="card">
-      <div class="card-icon">🎮</div>
-      <h3>Tarjetas Gráficas</h3>
-      <p>Disfruta de trazado de rayos en tiempo real y tasas de refresco extremas en resolución 4K.</p>
-      <a href="#contacto" class="card-link">Ver modelos</a>
-    </article>
-
-    <article class="card">
-      <div class="card-icon">💾</div>
-      <h3>Memorias RAM</h3>
-      <p>Módulos de alta velocidad DDR5 con iluminación RGB optimizados para overclocking estable.</p>
-      <a href="#contacto" class="card-link">Ver modelos</a>
-    </article>
-  </div>
-</section>
-
-<!-- PARTICIPANTE 4: Sección de Contacto -->
-<section id="contacto" class="contact-section">
-  <div class="contact-header">
-    <h2>Cotiza tu PC Gamer</h2>
-    <p>Escríbenos y un especialista de Nexus configurará el equipo de tus sueños a la medida de tu presupuesto.</p>
-  </div>
-
-  <form class="contact-form" onsubmit="event.preventDefault();">
-    <div class="form-group">
-      <input type="text" placeholder="Nombre completo" required>
-    </div>
-    <div class="form-group">
-      <input type="email" placeholder="Correo electrónico" required>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Cuéntanos qué componentes buscas o el presupuesto que tienes estimado..." rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn-submit">Enviar Cotización</button>
-  </form>
-</section>
-
-<!-- PARTICIPANTE 4: Footer -->
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h4>Nexus <span>Hardware</span></h4>
-      <p>Tu punto de conexión con la máxima potencia tecnológica.</p>
-    </div>
-    <div class="footer-links">
+  <!-- PARTICIPANTE 1: Header y Menú -->
+  <header class="site-header">
+    <div class="logo">Nexus <span>Hardware</span></div>
+    <nav class="navigation">
       <a href="#inicio">Inicio</a>
-      <a href="#servicios">Componentes</a>
+      <a href="#productos">Componentes</a> <!-- 🔗 Conecta con la sección de abajo -->
+      <a href="#servicios">Servicios</a>
       <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- PARTICIPANTE 2: Sección Principal <main> -->
+  <main id="inicio" class="hero-section">
+    <div class="hero-content">
+      <h1>Forja tu Potencia Digital</h1>
+      <p>Equípate con los componentes de PC de alta gama más avanzados del mercado. Rendimiento extremo para entusiastas del hardware, creadores y gamers.</p>
+      <div class="hero-buttons">
+        <a href="#productos" class="btn-primary">Ver Catálogo</a> <!-- 🛠️ Cambiado a #productos -->
+        <a href="#contacto" class="btn-secondary">Cotizar PC</a>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Nexus Hardware. Todos los derechos reservados. Desarrollado en equipo.</p>
-  </div>
-</footer>
+  </main>
+
+  <!-- PARTICIPANTE 3: Sección de Servicios/Productos -->
+  <!-- 💡 LE AGREGAMOS EL ID="PRODUCTOS" AQUÍ PARA QUE EL MENÚ ENLACE CORRECTAMENTE -->
+  <section id="productos" class="services-section">
+    <div class="services-header">
+      <h2>Componentes Destacados</h2>
+      <p>Explora el hardware de máxima ingeniería que tenemos preparado para tu próxima build.</p>
+    </div>
+
+    <div class="services-container">
+      <article class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Procesadores</h3>
+        <p>Potencia pura para tus juegos y aplicaciones más exigentes con arquitectura de última generación.</p>
+        <a href="#contacto" class="card-link">Ver modelos</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🎮</div>
+        <h3>Tarjetas Gráficas</h3>
+        <p>Disfruta de trazado de rayos en tiempo real y tasas de refresco extremas en resolución 4K.</p>
+        <a href="#contacto" class="card-link">Ver modelos</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💾</div>
+        <h3>Memorias RAM</h3>
+        <p>Módulos de alta velocidad DDR5 con iluminación RGB optimizados para overclocking estable.</p>
+        <a href="#contacto" class="card-link">Ver modelos</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARTICIPANTE 4: Sección de Contacto -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-header">
+      <h2>Cotiza tu PC Gamer</h2>
+      <p>Escríbenos y un especialista de Nexus configurará el equipo de tus sueños a la medida de tu presupuesto.</p>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault();">
+      <div class="form-group">
+        <input type="text" placeholder="Nombre completo" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Cuéntanos qué componentes buscas o el presupuesto que tienes estimado..." rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Enviar Cotización</button>
+    </form>
+  </section>
+
+  <!-- PARTICIPANTE 4: Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Nexus <span>Hardware</span></h4>
+        <p>Tu punto de conexión con la máxima potencia tecnológica.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Componentes</a> <!-- 🛠️ Cambiado a #productos -->
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus Hardware. Todos los derechos reservados. Desarrollado en equipo.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

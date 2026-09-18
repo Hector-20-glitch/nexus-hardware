@@ -1,0 +1,4 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Evita que el header fijo tape el título de la sección */
+}
